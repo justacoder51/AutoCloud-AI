@@ -1,0 +1,15 @@
+# Build and publish only. Deployment is a separate, explicitly approved step.
+steps:
+  - name: python:3.11-slim
+    entrypoint: sh
+    args:
+      - -c
+      - pip install --no-cache-dir -r requirements-dev.txt && python -m pytest -q
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '-t', '${_IMAGE}', '.']
+images: ['${_IMAGE}']
+substitutions:
+  _IMAGE: 'REPLACE_WITH_ARTIFACT_REGISTRY_IMAGE'
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 900s

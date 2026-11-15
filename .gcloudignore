@@ -1,0 +1,13 @@
+.git/
+.venv/
+.env
+.env.*
+.gcloud/
+.aws/
+**/__pycache__/
+.pytest_cache/
+.tmp/
+data/
+models/
+*credentials*.json
+*service-account*.json
