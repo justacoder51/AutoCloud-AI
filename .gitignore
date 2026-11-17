@@ -11,6 +11,13 @@ __pycache__/
 *service-account*.json
 .gcloud/
 .aws/
-data/
-models/
+/data/
+/models/
 *.log
+
+# Generated deliverables, verification output and machine-local tooling.
+/output/
+/.codex/
+/bq
+/AutoCloud_*.pdf
+/AutoCloud_*.pptx

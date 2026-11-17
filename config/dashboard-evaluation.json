@@ -1,0 +1,1150 @@
+{
+  "project": "astute-sign-506809-j8",
+  "region": "asia-south1",
+  "service": "autocloud-api",
+  "evaluation": {
+    "run_name": "20261116T051914Z_48d41482",
+    "training_profile": "exploratory",
+    "evaluation_status": "preliminary_exploratory",
+    "training_history_end": "2026-11-15T22:00:00+00:00",
+    "forecast_evaluation": [
+      {
+        "target": "cpu_utilization",
+        "horizon_minutes": 5,
+        "test_mae": 0.00025746190273338393,
+        "test_rmse": 0.0002734595108544997,
+        "persistence_test_mae": 0.00015310860454324318,
+        "persistence_test_rmse": 0.0002103189895456137,
+        "test_samples": 36,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "memory_utilization",
+        "horizon_minutes": 5,
+        "test_mae": 2.294778823852539e-05,
+        "test_rmse": 2.294778823852539e-05,
+        "persistence_test_mae": 1.8750433304780422e-15,
+        "persistence_test_rmse": 2.7134298926013876e-15,
+        "test_samples": 36,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "request_count",
+        "horizon_minutes": 5,
+        "test_mae": 4.795132660284275,
+        "test_rmse": 6.728137093325649,
+        "persistence_test_mae": 1.2195121951219512,
+        "persistence_test_rmse": 3.4287166055210236,
+        "test_samples": 41,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "cpu_utilization",
+        "horizon_minutes": 10,
+        "test_mae": 0.00030279312559881286,
+        "test_rmse": 0.00031941972803199145,
+        "persistence_test_mae": 0.0001420150327083475,
+        "persistence_test_rmse": 0.00018229546307617464,
+        "test_samples": 31,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "memory_utilization",
+        "horizon_minutes": 10,
+        "test_mae": 1.8924474716186523e-05,
+        "test_rmse": 1.8924474716186523e-05,
+        "persistence_test_mae": 1.6044513388131294e-15,
+        "persistence_test_rmse": 2.7071705304178656e-15,
+        "test_samples": 31,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "request_count",
+        "horizon_minutes": 10,
+        "test_mae": 5.36323881149292,
+        "test_rmse": 6.769631084058826,
+        "persistence_test_mae": 2.7777777777777777,
+        "persistence_test_rmse": 5.222813205330799,
+        "test_samples": 36,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "cpu_utilization",
+        "horizon_minutes": 15,
+        "test_mae": 0.00030900086331655017,
+        "test_rmse": 0.0003247885621585471,
+        "persistence_test_mae": 0.00015798348061477277,
+        "persistence_test_rmse": 0.00021068595568735912,
+        "test_samples": 26,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "memory_utilization",
+        "horizon_minutes": 15,
+        "test_mae": 1.624226570143059e-05,
+        "test_rmse": 1.624226570143059e-05,
+        "persistence_test_mae": 1.2297855042001734e-15,
+        "persistence_test_rmse": 2.090233427816742e-15,
+        "test_samples": 26,
+        "beats_persistence_mae": false
+      },
+      {
+        "target": "request_count",
+        "horizon_minutes": 15,
+        "test_mae": 9.873972354396697,
+        "test_rmse": 10.873727486811744,
+        "persistence_test_mae": 4.838709677419355,
+        "persistence_test_rmse": 6.914220969343056,
+        "test_samples": 31,
+        "beats_persistence_mae": false
+      }
+    ],
+    "baseline_comparison": {
+      "models_evaluated": 9,
+      "models_beating_persistence_mae": 0,
+      "comparison_metric": "held_out_test_mae"
+    },
+    "training_quality": {
+      "profile": "exploratory",
+      "minimum_observed_minutes": 200,
+      "horizons_minutes": [
+        5,
+        10,
+        15
+      ],
+      "forecast_split_samples": {
+        "cpu_utilization_5m": {
+          "train": 134,
+          "validation": 41,
+          "test": 36
+        },
+        "memory_utilization_5m": {
+          "train": 134,
+          "validation": 41,
+          "test": 36
+        },
+        "request_count_5m": {
+          "train": 134,
+          "validation": 41,
+          "test": 41
+        },
+        "cpu_utilization_10m": {
+          "train": 129,
+          "validation": 36,
+          "test": 31
+        },
+        "memory_utilization_10m": {
+          "train": 129,
+          "validation": 36,
+          "test": 31
+        },
+        "request_count_10m": {
+          "train": 129,
+          "validation": 36,
+          "test": 36
+        },
+        "cpu_utilization_15m": {
+          "train": 124,
+          "validation": 31,
+          "test": 26
+        },
+        "memory_utilization_15m": {
+          "train": 124,
+          "validation": 31,
+          "test": 26
+        },
+        "request_count_15m": {
+          "train": 124,
+          "validation": 31,
+          "test": 31
+        }
+      },
+      "deployment_ready": false,
+      "ready": true,
+      "reasons": [],
+      "grid_minutes": 232,
+      "observed_minutes": 232,
+      "gap_minutes": 0,
+      "missing_fraction": {
+        "cpu_utilization": 0.02586206896551724,
+        "memory_utilization": 0.02586206896551724,
+        "request_count": 0.004310344827586207,
+        "network_ingress": 0.004310344827586207,
+        "network_egress": 0.004310344827586207,
+        "average_latency": 0.09051724137931035,
+        "error_rate": 0.09051724137931035,
+        "instance_count": 0.0
+      },
+      "first_timestamp": "2026-11-15T18:09:00+00:00",
+      "last_timestamp": "2026-11-15T22:00:00+00:00",
+      "note": "Preliminary exploratory results only; not deployment evidence"
+    },
+    "anomaly_evaluation_status": "evaluated_preliminary",
+    "deployment_allowed": false,
+    "note": "Recorded held-out results; workload representativeness and label quality require independent review.",
+    "anomaly_evaluation": {
+      "schema_version": 1,
+      "status": "evaluated_preliminary",
+      "label_source": "data\\training_inputs\\experiment_1c4121e4baad4aa3bf61776d28a232dc\\anomaly_labels_regime_shift.csv",
+      "anomaly_detected": {
+        "precision": 1.0,
+        "recall": 0.9523809523809523,
+        "f1": 0.975609756097561,
+        "confusion_matrix": [
+          [
+            26,
+            0
+          ],
+          [
+            1,
+            20
+          ]
+        ],
+        "false_positive_rate": 0.0,
+        "evaluated_samples": 47
+      },
+      "threshold_baseline": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            26,
+            0
+          ],
+          [
+            15,
+            0
+          ]
+        ],
+        "false_positive_rate": 0.0,
+        "evaluated_samples": 41
+      },
+      "coverage": {
+        "total_test_rows": 47,
+        "labelled_test_rows": 47,
+        "model_evaluated_rows": 47,
+        "baseline_evaluated_rows": 41,
+        "baseline_abstained_rows": 6,
+        "shared_observable_rows": 41
+      },
+      "shared_observable_comparison": {
+        "evaluated_samples": 41,
+        "anomaly_detected": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": [
+            [
+              26,
+              0
+            ],
+            [
+              0,
+              15
+            ]
+          ],
+          "false_positive_rate": 0.0,
+          "evaluated_samples": 41
+        },
+        "threshold_baseline": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              26,
+              0
+            ],
+            [
+              15,
+              0
+            ]
+          ],
+          "false_positive_rate": 0.0,
+          "evaluated_samples": 41
+        }
+      },
+      "evaluation_protocol": "held_out_test_partition_post_hoc_experiment_event_labels",
+      "test_window_start": "2026-11-15T21:14:00+00:00",
+      "test_window_end": "2026-11-15T22:00:00+00:00",
+      "test_partition_minutes": 47,
+      "note": "Primary metrics evaluate post-hoc experiment-event regime-shift labels (traffic cessation after 2026-11-15T21:38:59.189151+00:00). Because Isolation Forest (47 rows) and the heuristic threshold baseline (41 rows; 6 wholly missing idle rows excluded) differ in coverage, shared_observable_comparison reports like-for-like scores on the 41 mutually observable rows. operational_fault_audit assumes all 47 test minutes are healthy with 0 positive fault examples, so fault sensitivity is unmeasured.",
+      "label_provenance": {
+        "experiment_id": "1c4121e4baad4aa3bf61776d28a232dc",
+        "label_classification": "post_hoc_experiment_event_labels",
+        "external_sources": [
+          "data/training_runs/1c4121e4baad4aa3bf61776d28a232dc/status.json",
+          "data/training_runs/1c4121e4baad4aa3bf61776d28a232dc/phase_7.json"
+        ],
+        "traffic_ended_at": "2026-11-15T21:38:59.189151+00:00",
+        "test_partition_start": "2026-11-15T21:14:00+00:00",
+        "test_partition_end": "2026-11-15T22:00:00+00:00",
+        "total_rows": 47,
+        "label_sets": {
+          "anomaly_labels_regime_shift.csv": {
+            "normal_rows": 26,
+            "anomaly_rows": 21,
+            "definition": "Post-hoc experiment-event labels derived from client runner logs: active Phase 7 traffic (21:14Z..21:39Z, 10 req/min, 0/300 client errors) labeled 0; post-experiment traffic cessation and scale-to-zero (21:40Z..22:00Z) labeled 1."
+          },
+          "anomaly_labels_operational_fault.csv": {
+            "normal_rows": 47,
+            "anomaly_rows": 0,
+            "positive_fault_examples": 0,
+            "fault_sensitivity_measured": false,
+            "assumption": "All 47 test-partition minutes (including unlogged idle/scale-to-zero minutes after 21:39Z) are assumed operationally healthy because Phase 7 had 0/300 client HTTP errors and no fault was injected. Positive fault sensitivity is unmeasured.",
+            "definition": "Post-hoc operational-normality assumption audit: all 47 test minutes labeled 0 (0 positive fault cases; fault recall/sensitivity unmeasured)."
+          }
+        },
+        "derived_from_model_or_threshold_outputs": false
+      },
+      "operational_fault_audit": {
+        "schema_version": 1,
+        "status": "evaluated",
+        "label_source": "data\\training_inputs\\experiment_1c4121e4baad4aa3bf61776d28a232dc\\anomaly_labels_operational_fault.csv",
+        "anomaly_detected": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              27,
+              20
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "false_positive_rate": 0.425531914893617,
+          "evaluated_samples": 47
+        },
+        "threshold_baseline": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "confusion_matrix": [
+            [
+              41,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "false_positive_rate": 0.0,
+          "evaluated_samples": 41
+        },
+        "coverage": {
+          "total_test_rows": 47,
+          "labelled_test_rows": 47,
+          "model_evaluated_rows": 47,
+          "baseline_evaluated_rows": 41,
+          "baseline_abstained_rows": 6,
+          "shared_observable_rows": 41
+        },
+        "shared_observable_comparison": {
+          "evaluated_samples": 41,
+          "anomaly_detected": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "confusion_matrix": [
+              [
+                26,
+                15
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "false_positive_rate": 0.36585365853658536,
+            "evaluated_samples": 41
+          },
+          "threshold_baseline": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "confusion_matrix": [
+              [
+                41,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "false_positive_rate": 0.0,
+            "evaluated_samples": 41
+          }
+        },
+        "assumption": "all_test_rows_assumed_operationally_healthy_without_fault_injection",
+        "positive_fault_examples": 0,
+        "fault_sensitivity_measured": false
+      }
+    },
+    "forecast_diagnostics": {
+      "status": "evaluated",
+      "models_evaluated": 9,
+      "models_beating_persistence_mae": 0,
+      "models_beating_historical_average_mae": 5,
+      "models_beating_or_tying_historical_average_mae": 5,
+      "active_cutoff": "2026-11-15T21:39:00+00:00",
+      "data_characteristics": {
+        "grid_minutes": 232,
+        "observed_minutes": 232,
+        "span_hours": 3.87,
+        "sub_diurnal_span": true,
+        "test_window_start": "2026-11-15T21:14:00+00:00",
+        "test_window_end": "2026-11-15T22:00:00+00:00",
+        "targets": {
+          "cpu_utilization": {
+            "train_range": [
+              0.0054207914661124346,
+              0.0067332541100075805
+            ],
+            "test_range": [
+              0.005533125120262161,
+              0.006182196711591814
+            ],
+            "active_test_std": 0.0001742309467940406,
+            "post_cutoff_range": [
+              0.005533125120262161,
+              0.005815072391725629
+            ],
+            "post_cutoff_outside_train_range": false
+          },
+          "memory_utilization": {
+            "train_range": [
+              0.11110687255859375,
+              0.11125946044922053
+            ],
+            "test_range": [
+              0.1112594604492152,
+              0.1112594604492223
+            ],
+            "active_test_std": 1.9706909747626936e-15,
+            "post_cutoff_range": [
+              0.1112594604492152,
+              0.1112594604492223
+            ],
+            "post_cutoff_outside_train_range": false
+          },
+          "request_count": {
+            "train_range": [
+              0.0,
+              14.0
+            ],
+            "test_range": [
+              0.0,
+              10.0
+            ],
+            "active_test_std": 0.0,
+            "post_cutoff_range": [
+              0.0,
+              1.0
+            ],
+            "post_cutoff_outside_train_range": false
+          }
+        }
+      },
+      "per_model": {
+        "cpu_utilization_5m": {
+          "target": "cpu_utilization",
+          "horizon_minutes": 5,
+          "xgboost_test": {
+            "mae": 0.00025746190273338393,
+            "rmse": 0.0002734595108544997,
+            "mape": 4.5148069759775495,
+            "mape_samples": 36,
+            "samples": 36
+          },
+          "persistence_test": {
+            "mae": 0.00015310860454324318,
+            "rmse": 0.0002103189895456137,
+            "mape": 2.6495566297350397,
+            "mape_samples": 36,
+            "samples": 36
+          },
+          "historical_average_test": {
+            "mae": 0.00026171542932854844,
+            "rmse": 0.000279242856158036,
+            "mape": 4.592263738221872,
+            "mape_samples": 36,
+            "samples": 36
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": true,
+          "beats_or_tying_historical_average_mae": true,
+          "active_in_regime": {
+            "samples": 21,
+            "xgboost": {
+              "mae": 0.000240124185285713,
+              "rmse": 0.00026056279030449165,
+              "mape": 4.19137367405028,
+              "mape_samples": 21,
+              "samples": 21
+            },
+            "persistence": {
+              "mae": 0.00020449411890342101,
+              "rmse": 0.00026211287684863824,
+              "mape": 3.5188905275933715,
+              "mape_samples": 21,
+              "samples": 21
+            },
+            "historical_average": {
+              "mae": 0.0002374278915373761,
+              "rmse": 0.0002600096147960703,
+              "mape": 4.148599334292651,
+              "mape_samples": 21,
+              "samples": 21
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 15,
+            "xgboost": {
+              "mae": 0.0002817347071601232,
+              "rmse": 0.00029055480552988606,
+              "mape": 4.967613598675726,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "persistence": {
+              "mae": 8.116888443899424e-05,
+              "rmse": 9.988674275675404e-05,
+              "mape": 1.4324891727333735,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "historical_average": {
+              "mae": 0.0002957179822361897,
+              "rmse": 0.00030413282429845174,
+              "mape": 5.213393903722778,
+              "mape_samples": 15,
+              "samples": 15
+            }
+          }
+        },
+        "memory_utilization_5m": {
+          "target": "memory_utilization",
+          "horizon_minutes": 5,
+          "xgboost_test": {
+            "mae": 2.294778823852539e-05,
+            "rmse": 2.294778823852539e-05,
+            "mape": 0.020625471439347186,
+            "mape_samples": 36,
+            "samples": 36
+          },
+          "persistence_test": {
+            "mae": 1.8750433304780422e-15,
+            "rmse": 2.7134298926013876e-15,
+            "mape": 1.6852888940027319e-12,
+            "mape_samples": 36,
+            "samples": 36
+          },
+          "historical_average_test": {
+            "mae": 2.2945119373840583e-05,
+            "rmse": 2.294511937384058e-05,
+            "mape": 0.020623072663841686,
+            "mape_samples": 36,
+            "samples": 36
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": false,
+          "beats_or_tying_historical_average_mae": false,
+          "active_in_regime": {
+            "samples": 21,
+            "xgboost": {
+              "mae": 2.2947788238356214e-05,
+              "rmse": 2.2947788238356214e-05,
+              "mape": 0.020625471439195162,
+              "mape_samples": 21,
+              "samples": 21
+            },
+            "persistence": {
+              "mae": 2.1992989440193578e-15,
+              "rmse": 3.0025910814704438e-15,
+              "mape": 1.9767298305596014e-12,
+              "mape_samples": 21,
+              "samples": 21
+            },
+            "historical_average": {
+              "mae": 2.2945119373671407e-05,
+              "rmse": 2.2945119373671407e-05,
+              "mape": 0.020623072663689658,
+              "mape_samples": 21,
+              "samples": 21
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 15,
+            "xgboost": {
+              "mae": 2.2947788238762238e-05,
+              "rmse": 2.2947788238762238e-05,
+              "mape": 0.020625471439560023,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "persistence": {
+              "mae": 1.4210854715202005e-15,
+              "rmse": 2.2469334198890887e-15,
+              "mape": 1.2772715828231141e-12,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "historical_average": {
+              "mae": 2.294511937407743e-05,
+              "rmse": 2.294511937407743e-05,
+              "mape": 0.02062307266405452,
+              "mape_samples": 15,
+              "samples": 15
+            }
+          }
+        },
+        "request_count_5m": {
+          "target": "request_count",
+          "horizon_minutes": 5,
+          "xgboost_test": {
+            "mae": 4.795132660284275,
+            "rmse": 6.728137093325649,
+            "mape": 43.89663046056574,
+            "mape_samples": 22,
+            "samples": 41
+          },
+          "persistence_test": {
+            "mae": 1.2195121951219512,
+            "rmse": 3.4287166055210236,
+            "mape": 40.909090909090914,
+            "mape_samples": 22,
+            "samples": 41
+          },
+          "historical_average_test": {
+            "mae": 4.872770294867128,
+            "rmse": 6.428420822072674,
+            "mape": 44.8270013568521,
+            "mape_samples": 22,
+            "samples": 41
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": true,
+          "beats_or_tying_historical_average_mae": true,
+          "active_in_regime": {
+            "samples": 21,
+            "xgboost": {
+              "mae": 0.19604805537632533,
+              "rmse": 0.2611851434549409,
+              "mape": 1.9604805537632533,
+              "mape_samples": 21,
+              "samples": 21
+            },
+            "persistence": {
+              "mae": 0.0,
+              "rmse": 0.0,
+              "mape": 0.0,
+              "mape_samples": 21,
+              "samples": 21
+            },
+            "historical_average": {
+              "mae": 0.7835820895522386,
+              "rmse": 0.7835820895522384,
+              "mape": 7.835820895522387,
+              "mape_samples": 21,
+              "samples": 21
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 20,
+            "xgboost": {
+              "mae": 9.624171495437622,
+              "rmse": 9.62950779465797,
+              "mape": 924.555778503418,
+              "mape_samples": 1,
+              "samples": 20
+            },
+            "persistence": {
+              "mae": 2.5,
+              "rmse": 4.909175083453431,
+              "mape": 900.0,
+              "mape_samples": 1,
+              "samples": 20
+            },
+            "historical_average": {
+              "mae": 9.166417910447764,
+              "rmse": 9.169008523770577,
+              "mape": 821.6417910447761,
+              "mape_samples": 1,
+              "samples": 20
+            }
+          }
+        },
+        "cpu_utilization_10m": {
+          "target": "cpu_utilization",
+          "horizon_minutes": 10,
+          "xgboost_test": {
+            "mae": 0.00030279312559881286,
+            "rmse": 0.00031941972803199145,
+            "mape": 5.317390037079761,
+            "mape_samples": 31,
+            "samples": 31
+          },
+          "persistence_test": {
+            "mae": 0.0001420150327083475,
+            "rmse": 0.00018229546307617464,
+            "mape": 2.467951092935481,
+            "mape_samples": 31,
+            "samples": 31
+          },
+          "historical_average_test": {
+            "mae": 0.0002734454261514053,
+            "rmse": 0.0002894330771809111,
+            "mape": 4.800722168955143,
+            "mape_samples": 31,
+            "samples": 31
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": false,
+          "beats_or_tying_historical_average_mae": false,
+          "active_in_regime": {
+            "samples": 16,
+            "xgboost": {
+              "mae": 0.00027096617017964564,
+              "rmse": 0.00029434850824743925,
+              "mape": 4.738886943217263,
+              "mape_samples": 16,
+              "samples": 16
+            },
+            "persistence": {
+              "mae": 0.00014542695530905814,
+              "rmse": 0.0001929961749345238,
+              "mape": 2.5093599423897808,
+              "mape_samples": 16,
+              "samples": 16
+            },
+            "historical_average": {
+              "mae": 0.0002456945400999336,
+              "rmse": 0.0002673533940620935,
+              "mape": 4.29308384510378,
+              "mape_samples": 16,
+              "samples": 16
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 15,
+            "xgboost": {
+              "mae": 0.00033674187804592454,
+              "rmse": 0.0003441551136156571,
+              "mape": 5.934460003866429,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "persistence": {
+              "mae": 0.00013837564860092282,
+              "rmse": 0.00017014118352575084,
+              "mape": 2.423781653517561,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "historical_average": {
+              "mae": 0.00030304637127297516,
+              "rmse": 0.0003112631570546495,
+              "mape": 5.342203047729928,
+              "mape_samples": 15,
+              "samples": 15
+            }
+          }
+        },
+        "memory_utilization_10m": {
+          "target": "memory_utilization",
+          "horizon_minutes": 10,
+          "xgboost_test": {
+            "mae": 1.8924474716186523e-05,
+            "rmse": 1.8924474716186523e-05,
+            "mape": 0.01700931735582527,
+            "mape_samples": 31,
+            "samples": 31
+          },
+          "persistence_test": {
+            "mae": 1.6044513388131294e-15,
+            "rmse": 2.7071705304178656e-15,
+            "mape": 1.4420808193164169e-12,
+            "mape_samples": 31,
+            "samples": 31
+          },
+          "historical_average_test": {
+            "mae": 1.8925629844956937e-05,
+            "rmse": 1.8925629844956934e-05,
+            "mape": 0.017010355585532433,
+            "mape_samples": 31,
+            "samples": 31
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": true,
+          "beats_or_tying_historical_average_mae": true,
+          "active_in_regime": {
+            "samples": 16,
+            "xgboost": {
+              "mae": 1.892447471596448e-05,
+              "rmse": 1.892447471596448e-05,
+              "mape": 0.017009317355625737,
+              "mape_samples": 16,
+              "samples": 16
+            },
+            "persistence": {
+              "mae": 1.9984014443252818e-15,
+              "rmse": 2.945754565036118e-15,
+              "mape": 1.7961631633450071e-12,
+              "mape_samples": 16,
+              "samples": 16
+            },
+            "historical_average": {
+              "mae": 1.8925629844734893e-05,
+              "rmse": 1.8925629844734893e-05,
+              "mape": 0.0170103555853329,
+              "mape_samples": 16,
+              "samples": 16
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 15,
+            "xgboost": {
+              "mae": 1.892447471642337e-05,
+              "rmse": 1.892447471642337e-05,
+              "mape": 0.017009317356038122,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "persistence": {
+              "mae": 1.1842378929335002e-15,
+              "rmse": 2.426965476814662e-15,
+              "mape": 1.0643929856859204e-12,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "historical_average": {
+              "mae": 1.8925629845193784e-05,
+              "rmse": 1.8925629845193784e-05,
+              "mape": 0.017010355585745283,
+              "mape_samples": 15,
+              "samples": 15
+            }
+          }
+        },
+        "request_count_10m": {
+          "target": "request_count",
+          "horizon_minutes": 10,
+          "xgboost_test": {
+            "mae": 5.36323881149292,
+            "rmse": 6.769631084058826,
+            "mape": 57.84875981947955,
+            "mape_samples": 17,
+            "samples": 36
+          },
+          "persistence_test": {
+            "mae": 2.7777777777777777,
+            "rmse": 5.222813205330799,
+            "mape": 52.94117647058824,
+            "mape_samples": 17,
+            "samples": 36
+          },
+          "historical_average_test": {
+            "mae": 5.454565030146426,
+            "rmse": 6.940985377317295,
+            "mape": 55.266757865937066,
+            "mape_samples": 17,
+            "samples": 36
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": true,
+          "beats_or_tying_historical_average_mae": true,
+          "active_in_regime": {
+            "samples": 16,
+            "xgboost": {
+              "mae": 0.7771835327148438,
+              "rmse": 0.8252945238528719,
+              "mape": 7.771835327148438,
+              "mape_samples": 16,
+              "samples": 16
+            },
+            "persistence": {
+              "mae": 0.0,
+              "rmse": 0.0,
+              "mape": 0.0,
+              "mape_samples": 16,
+              "samples": 16
+            },
+            "historical_average": {
+              "mae": 0.6589147286821699,
+              "rmse": 0.6589147286821699,
+              "mape": 6.589147286821699,
+              "mape_samples": 16,
+              "samples": 16
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 20,
+            "xgboost": {
+              "mae": 9.03208303451538,
+              "rmse": 9.052366551613927,
+              "mape": 859.0795516967773,
+              "mape_samples": 1,
+              "samples": 20
+            },
+            "persistence": {
+              "mae": 5.0,
+              "rmse": 7.00713921654194,
+              "mape": 900.0,
+              "mape_samples": 1,
+              "samples": 20
+            },
+            "historical_average": {
+              "mae": 9.291085271317831,
+              "rmse": 9.293641133533137,
+              "mape": 834.108527131783,
+              "mape_samples": 1,
+              "samples": 20
+            }
+          }
+        },
+        "cpu_utilization_15m": {
+          "target": "cpu_utilization",
+          "horizon_minutes": 15,
+          "xgboost_test": {
+            "mae": 0.00030900086331655017,
+            "rmse": 0.0003247885621585471,
+            "mape": 5.427414096484013,
+            "mape_samples": 26,
+            "samples": 26
+          },
+          "persistence_test": {
+            "mae": 0.00015798348061477277,
+            "rmse": 0.00021068595568735912,
+            "mape": 2.757493362790153,
+            "mape_samples": 26,
+            "samples": 26
+          },
+          "historical_average_test": {
+            "mae": 0.0002882809973995696,
+            "rmse": 0.00030300360461885903,
+            "mape": 5.061741736810002,
+            "mape_samples": 26,
+            "samples": 26
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": false,
+          "beats_or_tying_historical_average_mae": false,
+          "active_in_regime": {
+            "samples": 11,
+            "xgboost": {
+              "mae": 0.0002674740095892939,
+              "rmse": 0.00029209727063008687,
+              "mape": 4.670985629681413,
+              "mape_samples": 11,
+              "samples": 11
+            },
+            "persistence": {
+              "mae": 0.00014721062680125095,
+              "rmse": 0.00018721887451372243,
+              "mape": 2.518823640821622,
+              "mape_samples": 11,
+              "samples": 11
+            },
+            "historical_average": {
+              "mae": 0.0002518913005112341,
+              "rmse": 0.0002735814663983581,
+              "mape": 4.39358299508406,
+              "mape_samples": 11,
+              "samples": 11
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 15,
+            "xgboost": {
+              "mae": 0.0003394538893832048,
+              "rmse": 0.00034680915907065455,
+              "mape": 5.982128305472587,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "persistence": {
+              "mae": 0.00016588357341135545,
+              "rmse": 0.00022635413158813154,
+              "mape": 2.932517825567076,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "historical_average": {
+              "mae": 0.0003149667751176823,
+              "rmse": 0.0003228803481569328,
+              "mape": 5.551724814075694,
+              "mape_samples": 15,
+              "samples": 15
+            }
+          }
+        },
+        "memory_utilization_15m": {
+          "target": "memory_utilization",
+          "horizon_minutes": 15,
+          "xgboost_test": {
+            "mae": 1.624226570143059e-05,
+            "rmse": 1.624226570143059e-05,
+            "mape": 0.014598547966933467,
+            "mape_samples": 26,
+            "samples": 26
+          },
+          "persistence_test": {
+            "mae": 1.2297855042001734e-15,
+            "rmse": 2.090233427816742e-15,
+            "mape": 1.105331177443089e-12,
+            "mape_samples": 26,
+            "samples": 26
+          },
+          "historical_average_test": {
+            "mae": 1.6243227066668006e-05,
+            "rmse": 1.6243227066668006e-05,
+            "mape": 0.01459941204198249,
+            "mape_samples": 26,
+            "samples": 26
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": true,
+          "beats_or_tying_historical_average_mae": true,
+          "active_in_regime": {
+            "samples": 11,
+            "xgboost": {
+              "mae": 1.6242265701293945e-05,
+              "rmse": 1.6242265701293945e-05,
+              "mape": 0.01459854796681067,
+              "mape_samples": 11,
+              "samples": 11
+            },
+            "persistence": {
+              "mae": 9.689219124001365e-16,
+              "rmse": 1.8553442084620055e-15,
+              "mape": 8.708669882885007e-13,
+              "mape_samples": 11,
+              "samples": 11
+            },
+            "historical_average": {
+              "mae": 1.6243227066531363e-05,
+              "rmse": 1.624322706653136e-05,
+              "mape": 0.014599412041859692,
+              "mape_samples": 11,
+              "samples": 11
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 15,
+            "xgboost": {
+              "mae": 1.6242265701530793e-05,
+              "rmse": 1.6242265701530793e-05,
+              "mape": 0.014598547967023515,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "persistence": {
+              "mae": 1.4210854715202005e-15,
+              "rmse": 2.2469334198890887e-15,
+              "mape": 1.2772715828231208e-12,
+              "mape_samples": 15,
+              "samples": 15
+            },
+            "historical_average": {
+              "mae": 1.624322706676821e-05,
+              "rmse": 1.624322706676821e-05,
+              "mape": 0.01459941204207254,
+              "mape_samples": 15,
+              "samples": 15
+            }
+          }
+        },
+        "request_count_15m": {
+          "target": "request_count",
+          "horizon_minutes": 15,
+          "xgboost_test": {
+            "mae": 9.873972354396697,
+            "rmse": 10.873727486811744,
+            "mape": 144.44815754890442,
+            "mape_samples": 12,
+            "samples": 31
+          },
+          "persistence_test": {
+            "mae": 4.838709677419355,
+            "rmse": 6.914220969343056,
+            "mape": 75.0,
+            "mape_samples": 12,
+            "samples": 31
+          },
+          "historical_average_test": {
+            "mae": 6.2671696149843905,
+            "rmse": 7.579448258290578,
+            "mape": 75.43682795698925,
+            "mape_samples": 12,
+            "samples": 31
+          },
+          "beats_persistence_mae": false,
+          "beats_historical_average_mae": false,
+          "beats_or_tying_historical_average_mae": false,
+          "active_in_regime": {
+            "samples": 11,
+            "xgboost": {
+              "mae": 3.9747719764709473,
+              "rmse": 3.9747719764709473,
+              "mape": 39.74771976470947,
+              "mape_samples": 11,
+              "samples": 11
+            },
+            "persistence": {
+              "mae": 0.0,
+              "rmse": 0.0,
+              "mape": 0.0,
+              "mape_samples": 11,
+              "samples": 11
+            },
+            "historical_average": {
+              "mae": 0.5241935483870961,
+              "rmse": 0.524193548387096,
+              "mape": 5.241935483870961,
+              "mape_samples": 11,
+              "samples": 11
+            }
+          },
+          "post_cutoff_idle": {
+            "samples": 20,
+            "xgboost": {
+              "mae": 13.11853256225586,
+              "rmse": 13.212852641020552,
+              "mape": 1296.1529731750488,
+              "mape_samples": 1,
+              "samples": 20
+            },
+            "persistence": {
+              "mae": 7.5,
+              "rmse": 8.608135686662937,
+              "mape": 900.0,
+              "mape_samples": 1,
+              "samples": 20
+            },
+            "historical_average": {
+              "mae": 9.425806451612903,
+              "rmse": 9.428325793229012,
+              "mape": 847.5806451612904,
+              "mape_samples": 1,
+              "samples": 20
+            }
+          }
+        }
+      },
+      "diagnostic_hypotheses": [
+        "Sub-diurnal 3.87-hour window (232 grid minutes, 232 observed) covers less than one 24-hour cycle for time_sin/time_cos features.",
+        "Measured active test window (<= 2026-11-15T21:39:00+00:00) had near-zero variance on memory_utilization, request_count, giving last-value persistence ~0.0 MAE on those targets."
+      ],
+      "root_causes": [
+        "Sub-diurnal 3.87-hour window (232 grid minutes, 232 observed) covers less than one 24-hour cycle for time_sin/time_cos features.",
+        "Measured active test window (<= 2026-11-15T21:39:00+00:00) had near-zero variance on memory_utilization, request_count, giving last-value persistence ~0.0 MAE on those targets."
+      ]
+    }
+  }
+}

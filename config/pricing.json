@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "regions": ["asia-south1"],
+  "verified_on": "2026-11-15",
+  "expires_on": "2027-02-13",
+  "sources": [
+    "https://cloud.google.com/run/pricing",
+    "https://docs.cloud.google.com/run/docs/locations"
+  ],
+  "cards": {
+    "request_based": {
+      "active_cpu_per_vcpu_second": "0.000024",
+      "active_memory_per_gib_second": "0.0000025",
+      "idle_cpu_per_vcpu_second": "0.0000025",
+      "idle_memory_per_gib_second": "0.0000025",
+      "requests_per_million": "0.40"
+    },
+    "instance_based": {
+      "active_cpu_per_vcpu_second": "0.000018",
+      "active_memory_per_gib_second": "0.000002",
+      "idle_cpu_per_vcpu_second": "0",
+      "idle_memory_per_gib_second": "0",
+      "requests_per_million": "0"
+    },
+    "jobs": {
+      "active_cpu_per_vcpu_second": "0.000018",
+      "active_memory_per_gib_second": "0.000002",
+      "idle_cpu_per_vcpu_second": "0",
+      "idle_memory_per_gib_second": "0",
+      "requests_per_million": "0"
+    }
+  }
+}

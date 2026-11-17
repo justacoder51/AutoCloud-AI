@@ -1,6 +1,17 @@
 **
 !requirements.txt
+!requirements-monitoring.txt
+!requirements-dashboard.txt
+!requirements-cloud.txt
+!config/
+!config/dashboard-evaluation.json
+!config/measured-validation.json
 !app/
 !app/**
+!models/
+!models/runs/
+!models/runs/20261116T051914Z_48d41482/
+!models/runs/20261116T051914Z_48d41482/*.json
+!models/runs/20261116T051914Z_48d41482/history.ndjson
 **/__pycache__/
 **/*.pyc

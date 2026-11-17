@@ -1,0 +1,648 @@
+{
+  "source": "real_post_training_monitoring_and_request_logs",
+  "training_end": "2026-11-15T22:00:00+00:00",
+  "period_start_exclusive": "2026-11-15T22:00:00+00:00",
+  "period_end_inclusive": "2026-11-16T17:19:00+00:00",
+  "observed_minutes": 438,
+  "calendar_minutes": 708,
+  "forecast_results": {
+    "cpu_utilization_5m": {
+      "status": "evaluated",
+      "samples": 154,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:14:00+00:00",
+      "xgboost": {
+        "mae": 0.007683014251040702,
+        "rmse": 0.026711314169269324,
+        "mape": 25.75436526985343,
+        "mape_samples": 154,
+        "samples": 154
+      },
+      "persistence": {
+        "mae": 0.01399608179918979,
+        "rmse": 0.038968189227161075,
+        "mape": 119.02158863221692,
+        "mape_samples": 154,
+        "samples": 154
+      },
+      "historical_average": {
+        "mae": 0.007738019044310086,
+        "rmse": 0.026730248963301794,
+        "mape": 26.4148118125186,
+        "mape_samples": 154,
+        "samples": 154
+      },
+      "beats_persistence_mae": true,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 9,
+        "replicates": 2000,
+        "delta_mae_95": [
+          -0.009726136264084048,
+          0.0007181515314393701
+        ],
+        "nine_comparison_bonferroni_interval": [
+          -0.010755445214969659,
+          0.001440881848077725
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "memory_utilization_5m": {
+      "status": "evaluated",
+      "samples": 153,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:14:00+00:00",
+      "xgboost": {
+        "mae": 0.321837528846881,
+        "rmse": 0.32932495770014036,
+        "mape": 73.07703754380194,
+        "mape_samples": 153,
+        "samples": 153
+      },
+      "persistence": {
+        "mae": 0.03622349983437976,
+        "rmse": 0.0926413333765891,
+        "mape": 12.469643384204483,
+        "mape_samples": 153,
+        "samples": 153
+      },
+      "historical_average": {
+        "mae": 0.32183752617801625,
+        "rmse": 0.3293249550919542,
+        "mape": 73.07703689784728,
+        "mape_samples": 153,
+        "samples": 153
+      },
+      "beats_persistence_mae": false,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 9,
+        "replicates": 2000,
+        "delta_mae_95": [
+          0.24736166055770814,
+          0.31197660981085984
+        ],
+        "nine_comparison_bonferroni_interval": [
+          0.22201399768305075,
+          0.327837394305522
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "request_count_5m": {
+      "status": "evaluated",
+      "samples": 194,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:14:00+00:00",
+      "xgboost": {
+        "mae": 7.185377130803373,
+        "rmse": 7.479480270154938,
+        "mape": 272.4687362955762,
+        "mape_samples": 33,
+        "samples": 194
+      },
+      "persistence": {
+        "mae": 0.9484536082474226,
+        "rmse": 2.2567196337061097,
+        "mape": 124.24242424242425,
+        "mape_samples": 33,
+        "samples": 194
+      },
+      "historical_average": {
+        "mae": 8.745114633020464,
+        "rmse": 8.843377331815796,
+        "mape": 444.68243199586493,
+        "mape_samples": 33,
+        "samples": 194
+      },
+      "beats_persistence_mae": false,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 11,
+        "replicates": 2000,
+        "delta_mae_95": [
+          4.757258942960156,
+          8.52684282099159
+        ],
+        "nine_comparison_bonferroni_interval": [
+          4.442114884334429,
+          8.77925791394213
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "cpu_utilization_10m": {
+      "status": "evaluated",
+      "samples": 127,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:09:00+00:00",
+      "xgboost": {
+        "mae": 0.008740300228029036,
+        "rmse": 0.02923856424492598,
+        "mape": 26.581838320178964,
+        "mape_samples": 127,
+        "samples": 127
+      },
+      "persistence": {
+        "mae": 0.013931538073709643,
+        "rmse": 0.04027784866356344,
+        "mape": 98.19155853364914,
+        "mape_samples": 127,
+        "samples": 127
+      },
+      "historical_average": {
+        "mae": 0.008789503800717888,
+        "rmse": 0.029256503092665545,
+        "mape": 27.15315246444049,
+        "mape_samples": 127,
+        "samples": 127
+      },
+      "beats_persistence_mae": true,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 7,
+        "replicates": 2000,
+        "delta_mae_95": [
+          -0.00765409079647761,
+          0.0008334302271427105
+        ],
+        "nine_comparison_bonferroni_interval": [
+          -0.008103394366776403,
+          0.0012252570349181988
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "memory_utilization_10m": {
+      "status": "evaluated",
+      "samples": 127,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:09:00+00:00",
+      "xgboost": {
+        "mae": 0.32865213183887443,
+        "rmse": 0.3356696902513692,
+        "mape": 73.61043195588259,
+        "mape_samples": 127,
+        "samples": 127
+      },
+      "persistence": {
+        "mae": 0.0359051069507131,
+        "rmse": 0.08739037363078694,
+        "mape": 12.192807700557353,
+        "mape_samples": 127,
+        "samples": 127
+      },
+      "historical_average": {
+        "mae": 0.3286521329940032,
+        "rmse": 0.33566969138234876,
+        "mape": 73.61043222991356,
+        "mape_samples": 127,
+        "samples": 127
+      },
+      "beats_persistence_mae": false,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 7,
+        "replicates": 2000,
+        "delta_mae_95": [
+          0.25719699512218913,
+          0.31974163587046056
+        ],
+        "nine_comparison_bonferroni_interval": [
+          0.2508084917307546,
+          0.3236683461479259
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "request_count_10m": {
+      "status": "evaluated",
+      "samples": 156,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:09:00+00:00",
+      "xgboost": {
+        "mae": 7.961926310490339,
+        "rmse": 8.19196234638248,
+        "mape": 376.61692282166143,
+        "mape_samples": 33,
+        "samples": 156
+      },
+      "persistence": {
+        "mae": 0.9871794871794872,
+        "rmse": 2.1453587351685734,
+        "mape": 112.98701298701299,
+        "mape_samples": 33,
+        "samples": 156
+      },
+      "historical_average": {
+        "mae": 8.78980322003578,
+        "rmse": 8.895133243158996,
+        "mape": 476.57275971229467,
+        "mape_samples": 33,
+        "samples": 156
+      },
+      "beats_persistence_mae": false,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 11,
+        "replicates": 2000,
+        "delta_mae_95": [
+          5.794306228085568,
+          8.768757209124104
+        ],
+        "nine_comparison_bonferroni_interval": [
+          5.5577106627485495,
+          9.36447511536987
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "cpu_utilization_15m": {
+      "status": "evaluated",
+      "samples": 112,
+      "origin_start": "2026-11-16T07:45:00+00:00",
+      "origin_end": "2026-11-16T17:04:00+00:00",
+      "xgboost": {
+        "mae": 0.009563006312930845,
+        "rmse": 0.03107400404326712,
+        "mape": 27.17986305812468,
+        "mape_samples": 112,
+        "samples": 112
+      },
+      "persistence": {
+        "mae": 0.017024393054704757,
+        "rmse": 0.044517292369237176,
+        "mape": 142.74069323159176,
+        "mape_samples": 112,
+        "samples": 112
+      },
+      "historical_average": {
+        "mae": 0.00960322906845024,
+        "rmse": 0.031089769912316628,
+        "mape": 27.62937819124836,
+        "mape_samples": 112,
+        "samples": 112
+      },
+      "beats_persistence_mae": true,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 5,
+        "replicates": 2000,
+        "delta_mae_95": [
+          -0.010315420223758314,
+          -3.991499037354414e-05
+        ],
+        "nine_comparison_bonferroni_interval": [
+          -0.010737744111834577,
+          0.0007418694975208855
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "memory_utilization_15m": {
+      "status": "evaluated",
+      "samples": 112,
+      "origin_start": "2026-11-16T07:45:00+00:00",
+      "origin_end": "2026-11-16T17:04:00+00:00",
+      "xgboost": {
+        "mae": 0.33200461934936015,
+        "rmse": 0.33936521125707814,
+        "mape": 73.70289207487285,
+        "mape_samples": 112,
+        "samples": 112
+      },
+      "persistence": {
+        "mae": 0.0437216425293225,
+        "rmse": 0.09645901002059186,
+        "mape": 14.377960055659539,
+        "mape_samples": 112,
+        "samples": 112
+      },
+      "historical_average": {
+        "mae": 0.33200462031072536,
+        "rmse": 0.339365212197592,
+        "mape": 73.70289230213277,
+        "mape_samples": 112,
+        "samples": 112
+      },
+      "beats_persistence_mae": false,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 5,
+        "replicates": 2000,
+        "delta_mae_95": [
+          0.2640953560845689,
+          0.3086467723839946
+        ],
+        "nine_comparison_bonferroni_interval": [
+          0.2619561053618437,
+          0.3413043033721793
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    },
+    "request_count_15m": {
+      "status": "evaluated",
+      "samples": 125,
+      "origin_start": "2026-11-16T06:17:00+00:00",
+      "origin_end": "2026-11-16T17:04:00+00:00",
+      "xgboost": {
+        "mae": 9.316543884277344,
+        "rmse": 9.435655247393557,
+        "mape": 505.0735453764598,
+        "mape_samples": 32,
+        "samples": 125
+      },
+      "persistence": {
+        "mae": 1.184,
+        "rmse": 2.3698101189757796,
+        "mape": 117.86458333333334,
+        "mape_samples": 32,
+        "samples": 125
+      },
+      "historical_average": {
+        "mae": 8.795806451612902,
+        "rmse": 8.9218726248605,
+        "mape": 473.554207469278,
+        "mape_samples": 32,
+        "samples": 125
+      },
+      "beats_persistence_mae": false,
+      "paired_uncertainty": {
+        "status": "descriptive",
+        "blocks": 7,
+        "replicates": 2000,
+        "delta_mae_95": [
+          7.640090560373524,
+          9.07346696120042
+        ],
+        "nine_comparison_bonferroni_interval": [
+          7.568739137783277,
+          9.535005422738882
+        ],
+        "interpretation": "Negative favours model; adjacent hour blocks and one workload can still be dependent."
+      }
+    }
+  },
+  "forecast_mae_wins": 3,
+  "forecast_models_evaluated": 9,
+  "anomaly_event_comparisons": {
+    "all_separately_logged_outcomes": {
+      "raw_flag": {
+        "samples": 55,
+        "positive_minutes": 4,
+        "negative_minutes": 51,
+        "confusion_matrix": [
+          [
+            0,
+            51
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 0.07272727272727272,
+        "recall": 1.0,
+        "false_positive_rate": 1.0,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          0.9299533801014687,
+          1.0
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      },
+      "threshold_flag": {
+        "samples": 55,
+        "positive_minutes": 4,
+        "negative_minutes": 51,
+        "confusion_matrix": [
+          [
+            17,
+            34
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 0.10526315789473684,
+        "recall": 1.0,
+        "false_positive_rate": 0.6666666666666666,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          0.529683778569708,
+          0.7803006814641148
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      },
+      "operational_investigation": {
+        "samples": 55,
+        "positive_minutes": 4,
+        "negative_minutes": 51,
+        "confusion_matrix": [
+          [
+            17,
+            34
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 0.10526315789473684,
+        "recall": 1.0,
+        "false_positive_rate": 0.6666666666666666,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          0.529683778569708,
+          0.7803006814641148
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      },
+      "observed_error_signal": {
+        "samples": 54,
+        "positive_minutes": 4,
+        "negative_minutes": 50,
+        "confusion_matrix": [
+          [
+            50,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          6.938893903907228e-18,
+          0.07134759913335872
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      }
+    },
+    "matching_request_counts": {
+      "raw_flag": {
+        "samples": 39,
+        "positive_minutes": 4,
+        "negative_minutes": 35,
+        "confusion_matrix": [
+          [
+            0,
+            35
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 0.10256410256410256,
+        "recall": 1.0,
+        "false_positive_rate": 1.0,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          0.9010990076755959,
+          0.9999999999999999
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      },
+      "threshold_flag": {
+        "samples": 39,
+        "positive_minutes": 4,
+        "negative_minutes": 35,
+        "confusion_matrix": [
+          [
+            12,
+            23
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 0.14814814814814814,
+        "recall": 1.0,
+        "false_positive_rate": 0.6571428571428571,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          0.4915194951399626,
+          0.7916830501295105
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      },
+      "operational_investigation": {
+        "samples": 39,
+        "positive_minutes": 4,
+        "negative_minutes": 35,
+        "confusion_matrix": [
+          [
+            12,
+            23
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 0.14814814814814814,
+        "recall": 1.0,
+        "false_positive_rate": 0.6571428571428571,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          0.4915194951399626,
+          0.7916830501295105
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      },
+      "observed_error_signal": {
+        "samples": 39,
+        "positive_minutes": 4,
+        "negative_minutes": 35,
+        "confusion_matrix": [
+          [
+            35,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "recall_wilson_95": [
+          0.5101091635454027,
+          1.0
+        ],
+        "fpr_wilson_95": [
+          6.938893903907228e-18,
+          0.09890099232440402
+        ],
+        "support_status": "both_classes",
+        "limitations": "Minutes can be correlated; these intervals are descriptive, not independent incident-level confidence."
+      }
+    }
+  },
+  "logged_server_error_requests": 4,
+  "fault_label_scope": "Observed HTTP availability errors only, not operator-certified general infrastructure faults. Error rate is an input feature: contemporaneous detection, not prediction.",
+  "general_fault_accuracy_established": false,
+  "cost_evidence": {
+    "billing_status": "no_exported_rows",
+    "aggregate_rows": 0,
+    "measured_savings": null,
+    "savings_established": false,
+    "reasons": [
+      "No verified matched optimisation baseline/treatment experiment",
+      "No matching exported billing rows"
+    ]
+  },
+  "limitations": [
+    "One project/service and changing revisions; no broad workload generalisation.",
+    "Labelled request minutes are selected by logged traffic and can be correlated.",
+    "No observed server error is not proof of infrastructure health.",
+    "Log/Monitoring minute alignment and delivery may differ; matching-count comparison is provided.",
+    "No hyperparameters, weights, deployment, traffic or cloud configuration changed by this evaluation."
+  ],
+  "schema_version": 1,
+  "project": "astute-sign-506809-j8",
+  "region": "asia-south1",
+  "service": "autocloud-api",
+  "forecast_manifest_sha256": "2e41b24b8961490c26454e2eb0a4be8542ada0cab6c2f62760679136227ab525",
+  "anomaly_manifest_sha256": "ee9b2bd779e3df877e0214f60c05c3bd5cc8da35d37e368af07ff52c7d770659",
+  "observations_sha256": "5118d0b44639df14fe96f72f7ff3fc87a65959f4e5d88ae272e124a2bc4ec744",
+  "study_id": "20261116T172907Z"
+}

@@ -243,9 +243,9 @@ Output:
 
 Prediction horizons should initially include:
 
+- 5 minutes.
+- 10 minutes.
 - 15 minutes.
-- 30 minutes.
-- 60 minutes.
 
 Evaluate using:
 

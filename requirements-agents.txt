@@ -1,0 +1,5 @@
+-r requirements-ml.txt
+langgraph==1.2.22
+google-genai==1.75.0
+# Honor SOCKS proxies in managed sessions as well as direct local connections.
+httpx[socks]==0.28.1

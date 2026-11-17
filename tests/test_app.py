@@ -44,6 +44,9 @@ def test_production_hides_documentation():
     with TestClient(create_app(settings)) as client:
         assert client.get("/docs").status_code == 404
         assert client.get("/openapi.json").status_code == 404
+        root = client.get("/").json()
+        assert root["stage"] == "configured"
+        assert root["capabilities"]["autonomous_execution"] is False
 
 
 def test_internal_errors_are_sanitized():

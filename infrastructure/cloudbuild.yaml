@@ -6,10 +6,11 @@ steps:
       - -c
       - pip install --no-cache-dir -r requirements-dev.txt && python -m pytest -q
   - name: gcr.io/cloud-builders/docker
-    args: ['build', '-t', '${_IMAGE}', '.']
+    args: ['build', '-f', '${_DOCKERFILE}', '-t', '${_IMAGE}', '.']
 images: ['${_IMAGE}']
 substitutions:
   _IMAGE: 'REPLACE_WITH_ARTIFACT_REGISTRY_IMAGE'
+  _DOCKERFILE: 'Dockerfile'
 options:
   logging: CLOUD_LOGGING_ONLY
 timeout: 900s

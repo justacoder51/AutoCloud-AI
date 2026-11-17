@@ -6,14 +6,26 @@ Use a dedicated project and confirm which billing account is authorised.
 
 ## Required decisions
 
-- Confirm an existing project ID, or a globally unique ID for a new project.
-- Confirm billing account and monthly alert amount/currency.
-- Confirm region (proposed: `asia-south1`).
+- Confirmed project: `astute-sign-506809-j8` (existing project).
+- Confirmed region: `asia-south1`.
+- Confirmed private repository: `justacoder51/AutoCloud-AI`; connector access verified.
+- Billing enabled status confirmed from user-provided CLI output. Monthly alert
+  amount/currency and budget configuration remain unconfirmed.
 - Confirm deployer identity, build identity and runtime identity.
-- Confirm GitHub owner/repository and visibility before creating a remote.
 
-The CLI currently names an existing project, but that does not establish billing,
-API access or permission to deploy. Never assume that configured means approved.
+Initial deployment preview for the confirmed target:
+
+```powershell
+.\infrastructure\deploy.ps1 -ProjectId astute-sign-506809-j8 -Region asia-south1 -RuntimeServiceAccount autocloud-runtime@astute-sign-506809-j8.iam.gserviceaccount.com
+```
+
+The user has confirmed creation of the runtime service account and the
+`autocloud` Docker repository in `asia-south1`. This command only previews
+deployment and makes no cloud changes.
+
+The user's CLI output confirms billing and the main service APIs. Cloud Build
+was absent from the enabled API list. Resource existence and IAM still need
+checking; configuration does not establish permission to deploy.
 
 ## Authentication and preflight
 
@@ -99,9 +111,10 @@ the revision and test date in `docs/status.md`. Only then begin monitoring.
 
 The local repository can be initialised independently of cloud setup. Before
 the first commit inspect `git status` for credentials and generated files.
-Choose an approved owner/name and visibility, create the GitHub repository,
-add its remote, and push after reviewing the staged files. No remote is assumed
-and no GitHub repository has been created by this implementation.
+The user created the private `justacoder51/AutoCloud-AI` repository and connected
+the local `origin` remote. The initial commit is on `main`, and the README was
+successfully read through the GitHub connector. Subsequent changes should be
+reviewed before committing and pushing.
 
 ## Official references (checked 2026-11-15)
 
